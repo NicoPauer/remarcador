@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head aria-label = "Hace un inventario de cuanto hay de cada producto y en base a eso junto a un presupuesto genera la lista de precios.">
+	<title>Remarca Precios</title>
+	<meta name = "keywords" content = "poner precio" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="height=device-height; with = device-width; initial-scale = 1" />
+	<meta name = "author" content = "Nico Pauer" />
+	<meta name="created" content="20121024;3275900" />
+	<meta name="changed" content="0;0" />
+	<link rel = "stylesheet" href = "plantilla.css" />
+	<script type = "text/javascript" src = "scripts/principal.js"></script>
+</head>
+<body lang="es-ar" dir="ltr">
+	<div id = "panel-productos" class = "flatbox">
+		<header id = "titulo">
+			<label>REMARCAR PRECIOS</label><br />
+			<label for = "precio-maximo">presupuesto</label>
+			<input id = "precio-maximo" type = "number" role = "spinbutton" aria-label = "presupuesto" title = "presupuesto" placeholder = "(presupuesto)" />
+			<label for = "nombre-divisa">divisa</label>
+			<input id = "nombre-divisa" type = "text" role = "textbox" aria-label = "divisa" title = "moneda a usar" placeholder = "divisa" /><br />
+		</header>
+		<article id = "productos" class = "flatbox">
+			<section id = "inventario" class = "flatbox">
+				<label class = "flatbox">Producto</label><label class = "flatbox">Unidades</label><label class = "flatbox">Precio por Unidad</label><label class = "flatbox">Fecha</label><br />
+				<p aria-label = "inventario de productos" title = "inventario"></p>
+				<button id = "agregador" onclick = "javascript:var presupuesto = parseInt((document.querySelector('#precio-maximo')).value); agregarProducto(presupuesto)" class = "flatbox" aria-label = "agregar a inventario" title = "agrega un producto al inventario">Agregar<br /><img alt = "agrega producto al inventario" src = "images/signo-mas.svg"/></button>
+			</section>
+			<button id = "descargador" onclick = "javascript:descargarInforme();" class= "flatbox" aria-label = "descargar inventario" title = "descarga el inventario en formato csv">INFORME<br /><img alt = "Descargar lista de precios" src = "images/flecha.svg"/></button>
+		</article>
+	</div>
+</body>
+</html>

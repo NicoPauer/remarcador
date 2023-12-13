@@ -1,0 +1,73 @@
+html, body
+{
+ /* Aprovecho mas la pantalla */
+	text-align: center;
+	margin: 1em auto;
+	padding: 1.5em;
+}
+
+header, footer
+{
+  /* Encabezados y pies de pagina */
+    text-align: center;
+    font-weight: 925;
+    width: 50%;
+}
+
+article, section
+{
+  /* Le doy un estilo legible a articulos y
+     sus secciones */
+    text-align: justify;
+}
+
+input, button
+{
+  /* Estilos de formularios */
+  text-align: center;
+  font-weight: 575;
+  max-height: 15%;
+  width: 30%;
+}
+
+input:hover,input:focus, button:hover
+{
+    transition: linear 0.25s;
+    outline: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 840;
+}
+
+img
+{
+ /* Doy tamaño uniforme y razonable a las imagenes */
+    width: 6em;
+    height: 6em;
+}
+
+label
+{
+  /* Ajusta visualizacion de tabla */
+  margin: 0;
+  margin-left: 0.1em;
+  padding: 0.001em;
+}
+
+button
+{
+    margin-left: 0.12em;
+}
+
+section
+{
+    padding: 1em;
+}
+
+.flatbox
+{
+  /* Estilo de caja plano y constrastante */
+	border: solid black 0.14em;
+	background-color: #ffffff;
+	color: #000000;
+}
